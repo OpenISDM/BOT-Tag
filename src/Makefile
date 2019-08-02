@@ -1,7 +1,7 @@
 # LBeacon
 #---------------------------------------------------------------------------
 CC = gcc -std=gnu99
-OBJS = BeDIS.o Tag.o
+OBJS = Tag.o
 LIB = -L /usr/local/lib
 
 #---------------------------------------------------------------------------
@@ -12,8 +12,6 @@ Tag: $(OBJS)
 	chown pi:pi ../bin/Tag
 Tag.o: Tag.c Tag.h
 	$(CC) Tag.c Tag.h $(LIB) -c
-BeDIS.o: BeDIS.c BeDIS.h
-	$(CC) $(CFLAGS) BeDIS.c -c
 
 clean:
 	find . -type f | xargs touch
