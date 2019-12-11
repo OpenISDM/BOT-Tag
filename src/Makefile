@@ -9,7 +9,7 @@ all: Tag
 Tag: $(OBJS)
 	$(CC) $(OBJS) $(CFLAGS) -o Tag $(LIB) -lrt -lpthread -lbfb -lbluetooth -lwiringPi -lzlog 
 	@mv Tag ../bin/
-	chown pi:pi ../bin/Tag
+	chown bedis:bedis ../bin/Tag
 Tag.o: Tag.c Tag.h
 	$(CC) Tag.c Tag.h $(LIB) -c
 

@@ -17,11 +17,11 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-cd /home/pi/Tag/bin/
-chmod 755 /home/pi/Tag/bin/change_mac.sh
-/home/pi/Tag/bin/change_mac.sh
+cd /home/bedis/Tag/bin/
+chmod 755 /home/bedis/Tag/bin/change_mac.sh
+/home/bedis/Tag/bin/change_mac.sh
 sleep 1
-chmod 755 /home/pi/Tag/bin/auto_tag.sh
-/home/pi/Tag/bin/auto_tag.sh
+chmod 755 /home/bedis/Tag/bin/auto_tag.sh
+/home/bedis/Tag/bin/auto_tag.sh
 
 exit 0

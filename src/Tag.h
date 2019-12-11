@@ -59,10 +59,10 @@ Authors:
 */
 
 /* File path of the config file of the Tag */
-#define CONFIG_FILE_NAME "/home/pi/Tag/config/config.conf"
+#define CONFIG_FILE_NAME "../config/config.conf"
 
 /* File path of the logging file*/
-#define LOG_FILE_NAME "/home/pi/Tag/config/zlog.conf"
+#define LOG_FILE_NAME "../config/zlog.conf"
 
 /* The category defined of log file used for health report */
 #define LOG_CATEGORY_HEALTH_REPORT "Health_Report"
@@ -71,7 +71,7 @@ Authors:
 #define LOG_CATEGORY_DEBUG "Tag_Debug"
 
 /* The lock file for Tag  */
-#define TAG_LOCK_FILE "/home/pi/Tag/bin/Tag.pid"
+#define TAG_LOCK_FILE "../bin/Tag.pid"
 
 /* Number of times to retry open file, because file openning operation may have
    transient failure. */
